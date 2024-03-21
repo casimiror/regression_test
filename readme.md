@@ -16,7 +16,7 @@ The dataset to use contains records from residential used cars in the US, having
 | Variable | Description | 
 | :------------- | :----------- |
 
-| Make   |     The company maker of the car (categorical)
+| Make   |     The company maker of the car (categorical)|
 | Model | The name of the car (categorical)|
 | Type  | The type of Car (SUV, Sedan, etc) (categorical)|
 | Origin  | Location the car was produced (categorical)|
