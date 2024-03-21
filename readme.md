@@ -20,7 +20,7 @@ The dataset to use contains records from residential used cars in the US, having
 | Type  | The type of Car (SUV, Sedan, etc) (categorical)|
 | Origin  | Location the car was produced (categorical)|
 | DriveTrain | Physical structure that connects the engine to the wheels enabling (categorical)|
-| MSRP | Overall price (numerical) |
+| MSRP | Overall price (The expected output )(numerical) |
 | EngineSize | Total volume of both fuel and air that can be pushed through a car's cylinder (numerical)|
 | Cylinders | number of power units of the engine (numerical)|
 | Horsepower | Amount of Power the engine generates  (numerical)|
@@ -49,7 +49,6 @@ data_point = {
     "type": "SUV",
     "origin": "Asia",
     "drive": "All",
-    "msrp": "$36,945",
     "engine": "3.5",
     "cylinders": 6,
     "horsepower": 265,
@@ -60,9 +59,10 @@ data_point = {
     "length": 189,
 }
 print(hsm.get_prediction(data_point))
-# > It should print a dict like {"prediction": 162709.5, "top_features": {"used car_age": 0.712, "overall_quality": 0.221, ...}}
+# > It should print a dict like {"estimated_msrp": 162709.5, "top_features": {"used car_age": 0.712, "overall_quality": 0.221, ...}}
 ```
 
+The expected output variable prediction is the MSRP
 ## Requirements
 
 To accomplish the tasks mentioned, here are some requirements about the expected work to deliver:
